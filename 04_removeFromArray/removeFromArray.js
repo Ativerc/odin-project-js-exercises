@@ -1,4 +1,7 @@
-const removeFromArray = function() {
+/* jshint esversion: 6 */
+
+const removeFromArray = function(inputArray, ...args) {
+    return inputArray.filter( x => !args.includes(x));
 
 };
 
